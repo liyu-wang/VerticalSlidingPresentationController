@@ -14,6 +14,12 @@
 		72FDA41E25614E7C0035135E /* VerticalSlidingTransitionAnimators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FDA41A25614E7C0035135E /* VerticalSlidingTransitionAnimators.swift */; };
 		72FDA41F25614E7C0035135E /* VerticalSlidingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FDA41B25614E7C0035135E /* VerticalSlidingPresentationController.swift */; };
 		72FDA42025614E7C0035135E /* VerticalSlidingInteractiveTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FDA41C25614E7C0035135E /* VerticalSlidingInteractiveTransitionController.swift */; };
+		72FDA46525614F5D0035135E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FDA46425614F5D0035135E /* AppDelegate.swift */; };
+		72FDA46725614F5D0035135E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FDA46625614F5D0035135E /* SceneDelegate.swift */; };
+		72FDA46925614F5D0035135E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FDA46825614F5D0035135E /* ViewController.swift */; };
+		72FDA46C25614F5D0035135E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72FDA46A25614F5D0035135E /* Main.storyboard */; };
+		72FDA46E25614F5E0035135E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72FDA46D25614F5E0035135E /* Assets.xcassets */; };
+		72FDA47125614F5E0035135E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72FDA46F25614F5E0035135E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +43,14 @@
 		72FDA41A25614E7C0035135E /* VerticalSlidingTransitionAnimators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalSlidingTransitionAnimators.swift; sourceTree = "<group>"; };
 		72FDA41B25614E7C0035135E /* VerticalSlidingPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalSlidingPresentationController.swift; sourceTree = "<group>"; };
 		72FDA41C25614E7C0035135E /* VerticalSlidingInteractiveTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalSlidingInteractiveTransitionController.swift; sourceTree = "<group>"; };
+		72FDA46225614F5D0035135E /* VerticalSlidingPresentationControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VerticalSlidingPresentationControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72FDA46425614F5D0035135E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		72FDA46625614F5D0035135E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		72FDA46825614F5D0035135E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		72FDA46B25614F5D0035135E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		72FDA46D25614F5E0035135E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72FDA47025614F5E0035135E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		72FDA47225614F5E0035135E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +69,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		72FDA45F25614F5D0035135E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -63,6 +84,7 @@
 			children = (
 				72FDA3FA256141910035135E /* VerticalSlidingPresentationController */,
 				72FDA405256141910035135E /* VerticalSlidingPresentationControllerTests */,
+				72FDA46325614F5D0035135E /* VerticalSlidingPresentationControllerDemo */,
 				72FDA3F9256141910035135E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +94,7 @@
 			children = (
 				72FDA3F8256141910035135E /* VerticalSlidingPresentationController.framework */,
 				72FDA401256141910035135E /* VerticalSlidingPresentationControllerTests.xctest */,
+				72FDA46225614F5D0035135E /* VerticalSlidingPresentationControllerDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,6 +127,20 @@
 				72FDA41A25614E7C0035135E /* VerticalSlidingTransitionAnimators.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		72FDA46325614F5D0035135E /* VerticalSlidingPresentationControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				72FDA46425614F5D0035135E /* AppDelegate.swift */,
+				72FDA46625614F5D0035135E /* SceneDelegate.swift */,
+				72FDA46825614F5D0035135E /* ViewController.swift */,
+				72FDA46A25614F5D0035135E /* Main.storyboard */,
+				72FDA46D25614F5E0035135E /* Assets.xcassets */,
+				72FDA46F25614F5E0035135E /* LaunchScreen.storyboard */,
+				72FDA47225614F5E0035135E /* Info.plist */,
+			);
+			path = VerticalSlidingPresentationControllerDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +193,23 @@
 			productReference = 72FDA401256141910035135E /* VerticalSlidingPresentationControllerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		72FDA46125614F5D0035135E /* VerticalSlidingPresentationControllerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72FDA47525614F5E0035135E /* Build configuration list for PBXNativeTarget "VerticalSlidingPresentationControllerDemo" */;
+			buildPhases = (
+				72FDA45E25614F5D0035135E /* Sources */,
+				72FDA45F25614F5D0035135E /* Frameworks */,
+				72FDA46025614F5D0035135E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VerticalSlidingPresentationControllerDemo;
+			productName = VerticalSlidingPresentationControllerDemo;
+			productReference = 72FDA46225614F5D0035135E /* VerticalSlidingPresentationControllerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -170,6 +224,9 @@
 						LastSwiftMigration = 1210;
 					};
 					72FDA400256141910035135E = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					72FDA46125614F5D0035135E = {
 						CreatedOnToolsVersion = 12.1;
 					};
 				};
@@ -189,6 +246,7 @@
 			targets = (
 				72FDA3F7256141910035135E /* VerticalSlidingPresentationController */,
 				72FDA400256141910035135E /* VerticalSlidingPresentationControllerTests */,
+				72FDA46125614F5D0035135E /* VerticalSlidingPresentationControllerDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +263,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72FDA46025614F5D0035135E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72FDA47125614F5E0035135E /* LaunchScreen.storyboard in Resources */,
+				72FDA46E25614F5E0035135E /* Assets.xcassets in Resources */,
+				72FDA46C25614F5D0035135E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +298,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		72FDA45E25614F5D0035135E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72FDA46925614F5D0035135E /* ViewController.swift in Sources */,
+				72FDA46525614F5D0035135E /* AppDelegate.swift in Sources */,
+				72FDA46725614F5D0035135E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -239,6 +317,25 @@
 			targetProxy = 72FDA403256141910035135E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		72FDA46A25614F5D0035135E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72FDA46B25614F5D0035135E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		72FDA46F25614F5E0035135E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72FDA47025614F5E0035135E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		72FDA40A256141910035135E /* Debug */ = {
@@ -448,6 +545,44 @@
 			};
 			name = Release;
 		};
+		72FDA47325614F5E0035135E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VerticalSlidingPresentationControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liyu.VerticalSlidingPresentationControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		72FDA47425614F5E0035135E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VerticalSlidingPresentationControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liyu.VerticalSlidingPresentationControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -474,6 +609,15 @@
 			buildConfigurations = (
 				72FDA410256141910035135E /* Debug */,
 				72FDA411256141910035135E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72FDA47525614F5E0035135E /* Build configuration list for PBXNativeTarget "VerticalSlidingPresentationControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72FDA47325614F5E0035135E /* Debug */,
+				72FDA47425614F5E0035135E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
