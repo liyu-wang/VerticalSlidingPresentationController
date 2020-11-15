@@ -10,6 +10,10 @@
 		72FDA402256141910035135E /* VerticalSlidingPresentationController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72FDA3F8256141910035135E /* VerticalSlidingPresentationController.framework */; };
 		72FDA407256141910035135E /* VerticalSlidingPresentationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FDA406256141910035135E /* VerticalSlidingPresentationControllerTests.swift */; };
 		72FDA409256141910035135E /* VerticalSlidingPresentationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 72FDA3FB256141910035135E /* VerticalSlidingPresentationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72FDA41D25614E7C0035135E /* UIKit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FDA41925614E7C0035135E /* UIKit+Extensions.swift */; };
+		72FDA41E25614E7C0035135E /* VerticalSlidingTransitionAnimators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FDA41A25614E7C0035135E /* VerticalSlidingTransitionAnimators.swift */; };
+		72FDA41F25614E7C0035135E /* VerticalSlidingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FDA41B25614E7C0035135E /* VerticalSlidingPresentationController.swift */; };
+		72FDA42025614E7C0035135E /* VerticalSlidingInteractiveTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FDA41C25614E7C0035135E /* VerticalSlidingInteractiveTransitionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		72FDA401256141910035135E /* VerticalSlidingPresentationControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VerticalSlidingPresentationControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72FDA406256141910035135E /* VerticalSlidingPresentationControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalSlidingPresentationControllerTests.swift; sourceTree = "<group>"; };
 		72FDA408256141910035135E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72FDA41925614E7C0035135E /* UIKit+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+Extensions.swift"; sourceTree = "<group>"; };
+		72FDA41A25614E7C0035135E /* VerticalSlidingTransitionAnimators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalSlidingTransitionAnimators.swift; sourceTree = "<group>"; };
+		72FDA41B25614E7C0035135E /* VerticalSlidingPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalSlidingPresentationController.swift; sourceTree = "<group>"; };
+		72FDA41C25614E7C0035135E /* VerticalSlidingInteractiveTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalSlidingInteractiveTransitionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,7 @@
 		72FDA3FA256141910035135E /* VerticalSlidingPresentationController */ = {
 			isa = PBXGroup;
 			children = (
+				72FDA418256143F80035135E /* Sources */,
 				72FDA3FB256141910035135E /* VerticalSlidingPresentationController.h */,
 				72FDA3FC256141910035135E /* Info.plist */,
 			);
@@ -84,6 +93,17 @@
 				72FDA408256141910035135E /* Info.plist */,
 			);
 			path = VerticalSlidingPresentationControllerTests;
+			sourceTree = "<group>";
+		};
+		72FDA418256143F80035135E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				72FDA41925614E7C0035135E /* UIKit+Extensions.swift */,
+				72FDA41C25614E7C0035135E /* VerticalSlidingInteractiveTransitionController.swift */,
+				72FDA41B25614E7C0035135E /* VerticalSlidingPresentationController.swift */,
+				72FDA41A25614E7C0035135E /* VerticalSlidingTransitionAnimators.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +167,7 @@
 				TargetAttributes = {
 					72FDA3F7256141910035135E = {
 						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
 					};
 					72FDA400256141910035135E = {
 						CreatedOnToolsVersion = 12.1;
@@ -194,6 +215,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72FDA42025614E7C0035135E /* VerticalSlidingInteractiveTransitionController.swift in Sources */,
+				72FDA41E25614E7C0035135E /* VerticalSlidingTransitionAnimators.swift in Sources */,
+				72FDA41F25614E7C0035135E /* VerticalSlidingPresentationController.swift in Sources */,
+				72FDA41D25614E7C0035135E /* UIKit+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +366,7 @@
 		72FDA40D256141910035135E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +382,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.liyu.VerticalSlidingPresentationController;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +391,7 @@
 		72FDA40E256141910035135E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -387,6 +415,7 @@
 		72FDA410256141910035135E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = VerticalSlidingPresentationControllerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +433,7 @@
 		72FDA411256141910035135E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = VerticalSlidingPresentationControllerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
