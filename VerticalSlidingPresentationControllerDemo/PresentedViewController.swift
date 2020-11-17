@@ -15,25 +15,19 @@ private enum Constants {
     static let cellHeight: CGFloat = 44
 }
 
-class PresentedViewController: UIViewController {
+class PresentedViewController: VerticalSlidingPresentedViewController {
     @IBOutlet weak var barView: UIView!
     @IBOutlet weak var tableView: UITableView!
 
-    // MARK: - Required
-    
-    private var dockingLocation: VerticalPresentedViewDockingLocation = .none {
-        didSet {
-            switch dockingLocation {
-            case .none, .lowerAnchor:
-                isScrollBlocked = true
-            case .upperAnchor:
-                isScrollBlocked = false
-            }
-            tableView.showsVerticalScrollIndicator = !isScrollBlocked
-        }
+    // required
+    override var headerView: UIView {
+        return barView
     }
-    private var lastContentOffsetY: CGFloat = 0
-    private var isScrollBlocked = true
+
+    // required
+    override var scrollView: UIScrollView {
+        return tableView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,42 +56,4 @@ extension PresentedViewController: UITableViewDataSource {
     }
 }
 
-// MARK: - Required
-
 extension PresentedViewController: UITableViewDelegate {}
-
-extension PresentedViewController: UIScrollViewDelegate {
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if isScrollBlocked {
-            if dockingLocation == .upperAnchor && scrollView.contentOffset.y > lastContentOffsetY {
-                isScrollBlocked = false
-            }
-        } else {
-            if scrollView.contentOffset.y <= 0 {
-                isScrollBlocked = true
-                lastContentOffsetY = 0
-            }
-        }
-        guard isScrollBlocked else {
-            lastContentOffsetY = scrollView.contentOffset.y
-            return
-        }
-        if scrollView.contentOffset.y != lastContentOffsetY {
-            scrollView.contentOffset.y = lastContentOffsetY
-        }
-    }
-}
-
-extension PresentedViewController: VerticalSlidingInteractiveTransitionControllerDelegate {
-    func interactiveTransitionController(_ controller: VerticalSlidingInteractiveTransitionController, didDockAt location: VerticalPresentedViewDockingLocation) {
-        dockingLocation = location
-    }
-
-    func interactiveTransitionController(_ controller: VerticalSlidingInteractiveTransitionController, shouldAlwaysHandleGestureBeganAt point: CGPoint) -> Bool {
-        return barView.frame.contains(point)
-    }
-
-    func interactiveTransitionControllerShouldHandleGestureUpdate(_ controller: VerticalSlidingInteractiveTransitionController) -> Bool {
-        return isScrollBlocked
-    }
-}
