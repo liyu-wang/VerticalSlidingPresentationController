@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7212360D2577726F00F48B10 /* VerticalSlidingPresentationController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72FDA3F8256141910035135E /* VerticalSlidingPresentationController.framework */; };
+		7212360E2577726F00F48B10 /* VerticalSlidingPresentationController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 72FDA3F8256141910035135E /* VerticalSlidingPresentationController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		72C9E0042563FC6800590F81 /* VerticalSlidingPresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C9E0032563FC6800590F81 /* VerticalSlidingPresentedViewController.swift */; };
 		72FDA402256141910035135E /* VerticalSlidingPresentationController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72FDA3F8256141910035135E /* VerticalSlidingPresentationController.framework */; };
 		72FDA407256141910035135E /* VerticalSlidingPresentationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FDA406256141910035135E /* VerticalSlidingPresentationControllerTests.swift */; };
@@ -16,12 +18,10 @@
 		72FDA41F25614E7C0035135E /* VerticalSlidingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FDA41B25614E7C0035135E /* VerticalSlidingPresentationController.swift */; };
 		72FDA42025614E7C0035135E /* VerticalSlidingInteractiveTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FDA41C25614E7C0035135E /* VerticalSlidingInteractiveTransitionController.swift */; };
 		72FDA46525614F5D0035135E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FDA46425614F5D0035135E /* AppDelegate.swift */; };
-		72FDA46725614F5D0035135E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FDA46625614F5D0035135E /* SceneDelegate.swift */; };
 		72FDA46925614F5D0035135E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FDA46825614F5D0035135E /* ViewController.swift */; };
 		72FDA46C25614F5D0035135E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72FDA46A25614F5D0035135E /* Main.storyboard */; };
 		72FDA46E25614F5E0035135E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72FDA46D25614F5E0035135E /* Assets.xcassets */; };
 		72FDA47125614F5E0035135E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72FDA46F25614F5E0035135E /* LaunchScreen.storyboard */; };
-		72FDA47A256151730035135E /* VerticalSlidingPresentationController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72FDA3F8256141910035135E /* VerticalSlidingPresentationController.framework */; };
 		72FDA480256152900035135E /* PresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FDA47F256152900035135E /* PresentedViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +34,20 @@
 			remoteInfo = VerticalSlidingPresentationController;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7212360F2577726F00F48B10 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7212360E2577726F00F48B10 /* VerticalSlidingPresentationController.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		72C9E0032563FC6800590F81 /* VerticalSlidingPresentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalSlidingPresentedViewController.swift; sourceTree = "<group>"; };
@@ -49,7 +63,6 @@
 		72FDA41C25614E7C0035135E /* VerticalSlidingInteractiveTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalSlidingInteractiveTransitionController.swift; sourceTree = "<group>"; };
 		72FDA46225614F5D0035135E /* VerticalSlidingPresentationControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VerticalSlidingPresentationControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72FDA46425614F5D0035135E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		72FDA46625614F5D0035135E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		72FDA46825614F5D0035135E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		72FDA46B25614F5D0035135E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		72FDA46D25614F5E0035135E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72FDA47A256151730035135E /* VerticalSlidingPresentationController.framework in Frameworks */,
+				7212360D2577726F00F48B10 /* VerticalSlidingPresentationController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				72FDA46425614F5D0035135E /* AppDelegate.swift */,
-				72FDA46625614F5D0035135E /* SceneDelegate.swift */,
 				72FDA46825614F5D0035135E /* ViewController.swift */,
 				72FDA47F256152900035135E /* PresentedViewController.swift */,
 				72FDA46A25614F5D0035135E /* Main.storyboard */,
@@ -216,6 +228,7 @@
 				72FDA45E25614F5D0035135E /* Sources */,
 				72FDA45F25614F5D0035135E /* Frameworks */,
 				72FDA46025614F5D0035135E /* Resources */,
+				7212360F2577726F00F48B10 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -322,7 +335,6 @@
 				72FDA46925614F5D0035135E /* ViewController.swift in Sources */,
 				72FDA480256152900035135E /* PresentedViewController.swift in Sources */,
 				72FDA46525614F5D0035135E /* AppDelegate.swift in Sources */,
-				72FDA46725614F5D0035135E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,7 +582,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = VerticalSlidingPresentationControllerDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -589,7 +601,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = VerticalSlidingPresentationControllerDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
