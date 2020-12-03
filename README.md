@@ -21,7 +21,7 @@ VerticalSlidingPresentationController is a custom view controller presentation l
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. To integrate into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'VerticalSlidingPresentationController', '~> 0.1.2'
+pod 'VerticalSlidingPresentationController', '~> 0.1.3'
 ```
 
 ### Carthage
@@ -29,5 +29,17 @@ pod 'VerticalSlidingPresentationController', '~> 0.1.2'
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "liyu-wang/VerticalSlidingPresentationController" ~> 0.1.2
+github "liyu-wang/VerticalSlidingPresentationController" ~> 0.1.3
+```
+
+### Swift Package Manager
+
+The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the `swift` compiler.
+
+Once you have your Swift package set up, adding it as a dependency is as easy as adding it to the `dependencies` value of your `Package.swift`.
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/liyu-wang/VerticalSlidingPresentationController.git", .upToNextMajor(from: "0.1.3"))
+]
 ```
