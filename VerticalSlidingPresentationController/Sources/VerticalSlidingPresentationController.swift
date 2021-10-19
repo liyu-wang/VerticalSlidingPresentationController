@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol VerticalSlidingPresentationControllerDelegate: class {
+protocol VerticalSlidingPresentationControllerDelegate: AnyObject {
     func presentationControllerDidCompletePresentation(_ controller: VerticalSlidingPresentationController)
     func presentationControllerDidReceiveTapOnDimmingView(_ controller: VerticalSlidingPresentationController)
     func presentationControllerPresentedViewDockingLocation(_ controller: VerticalSlidingPresentationController) -> VerticalPresentedViewDockingLocation
@@ -45,8 +45,8 @@ class VerticalSlidingPresentationController: UIPresentationController {
 
         presentationWrappingView = UIView(frame: frameOfPresentedViewInContainerView)
 
-        let rounedCornerViewRect = presentationWrappingView.bounds.inset(by: UIEdgeInsets(top: 0, left: 0, bottom: -config.presentedViewCornerRadius, right: 0))
-        let presentationRoundedCornerView = UIView(frame: rounedCornerViewRect)
+        let roundedCornerViewRect = presentationWrappingView.bounds.inset(by: UIEdgeInsets(top: 0, left: 0, bottom: -config.presentedViewCornerRadius, right: 0))
+        let presentationRoundedCornerView = UIView(frame: roundedCornerViewRect)
         presentationRoundedCornerView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         presentationRoundedCornerView.layer.cornerRadius = config.presentedViewCornerRadius
         presentationRoundedCornerView.layer.masksToBounds = true
