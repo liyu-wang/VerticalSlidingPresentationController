@@ -7,6 +7,7 @@
 
 import UIKit
 
+@available(*, deprecated, message:"Use the VerticalSlidingPresentedViewControllerProtocol instead")
 open class VerticalSlidingPresentedViewController: UIViewController {
     open var headerView: UIView {
         return header
@@ -52,6 +53,7 @@ open class VerticalSlidingPresentedViewController: UIViewController {
     }
 }
 
+@available(*, deprecated, message:"Use the VerticalSlidingPresentedViewControllerProtocol instead")
 extension VerticalSlidingPresentedViewController {
     @objc
     open func loadCustomViews() {
@@ -70,6 +72,7 @@ extension VerticalSlidingPresentedViewController {
     }
 }
 
+@available(*, deprecated, message:"Use the VerticalSlidingPresentedViewControllerProtocol instead")
 extension VerticalSlidingPresentedViewController: UIScrollViewDelegate {
     open func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if isScrollBlocked {
@@ -92,6 +95,7 @@ extension VerticalSlidingPresentedViewController: UIScrollViewDelegate {
     }
 }
 
+@available(*, deprecated, message:"Use the VerticalSlidingPresentedViewControllerProtocol instead")
 extension VerticalSlidingPresentedViewController: VerticalSlidingInteractiveTransitionControllerDelegate {
     public func interactiveTransitionController(_ controller: VerticalSlidingInteractiveTransitionController, didDockAt location: VerticalPresentedViewDockingLocation) {
         dockingLocation = location

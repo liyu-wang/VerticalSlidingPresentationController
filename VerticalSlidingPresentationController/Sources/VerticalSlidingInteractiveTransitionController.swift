@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol VerticalSlidingInteractiveTransitionControllerDelegate: class {
+public protocol VerticalSlidingInteractiveTransitionControllerDelegate: AnyObject {
     func interactiveTransitionController(_ controller: VerticalSlidingInteractiveTransitionController,
                                          didDockAt location: VerticalPresentedViewDockingLocation)
     func interactiveTransitionController(_ controller: VerticalSlidingInteractiveTransitionController,
