@@ -1,8 +1,9 @@
 //
-//  PresentedViewController.swift
+//  DeprecatedDemoPresentedViewController.swift
 //  VerticalSlidingPresentationControllerDemo
 //
-//  Created by Liyu Wang on 26/10/21.
+//  Created by Liyu Wang on 7/3/20.
+//  Copyright © 2020 Liyu Wang. All rights reserved.
 //
 
 import UIKit
@@ -14,25 +15,20 @@ private enum Constants {
     static let cellHeight: CGFloat = 44
 }
 
-class PresentedViewController: UIViewController, VerticalSlidingPresentedViewControllerProtocol {
+@available(*, deprecated, message:"Check the PresentedViewController")
+class DeprecatedDemoPresentedViewController: VerticalSlidingPresentedViewController {
     @IBOutlet weak var barView: UIView!
     @IBOutlet weak var tableView: UITableView!
 
-    // MARK: - VerticalSlidingPresentedViewControllerProtocol
-    // --------------------- starts ---------------------
-
-    var headerView: UIView {
-        barView
-    }
-    var scrollableView: UIScrollView {
-        tableView
+    // required
+    override var headerView: UIView {
+        return barView
     }
 
-    var dockingLocation: VerticalPresentedViewDockingLocation = .none
-    var lastContentOffsetY: CGFloat = 0
-    var isScrollBlocked = true
-
-    // --------------------- ends ---------------------
+    // required
+    override var scrollView: UIScrollView {
+        return tableView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +36,7 @@ class PresentedViewController: UIViewController, VerticalSlidingPresentedViewCon
     }
 
     private func setupViews() {
-        barView.backgroundColor = .green
+        barView.backgroundColor = .red
         barView.layer.cornerRadius = 2.5
         tableView.rowHeight = Constants.cellHeight
         tableView.dataSource = self
@@ -48,7 +44,8 @@ class PresentedViewController: UIViewController, VerticalSlidingPresentedViewCon
     }
 }
 
-extension PresentedViewController: UITableViewDataSource {
+@available(*, deprecated, message:"Check the PresentedViewController")
+extension DeprecatedDemoPresentedViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         Constants.numberOfItems
     }
@@ -60,13 +57,5 @@ extension PresentedViewController: UITableViewDataSource {
     }
 }
 
-// MARK: - VerticalSlidingPresentedViewControllerProtocol
-// --------------------- starts ---------------------
-
-extension PresentedViewController: UITableViewDelegate {
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        scrollableViewDidScroll(scrollView)
-    }
-}
-
-// --------------------- ends ---------------------
+@available(*, deprecated, message:"Check the PresentedViewController")
+extension DeprecatedDemoPresentedViewController: UITableViewDelegate {}

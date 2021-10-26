@@ -20,6 +20,15 @@ class ViewController: UIViewController {
         presentedViewController.transitioningDelegate = transitionController
         present(presentedViewController, animated: true)
     }
+
+    @available(*, deprecated)
+    @IBAction func didTapPresentDeprecated(_ sender: Any) {
+        let deprecatedPresentedViewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DeprecatedDemoPresentedViewController") as! DeprecatedDemoPresentedViewController
+        deprecatedPresentedViewController.modalPresentationStyle = .custom
+        transitionController = VerticalSlidingInteractiveTransitionController(presentedViewController: deprecatedPresentedViewController,
+                                                                              presentingViewController: self)
+        deprecatedPresentedViewController.transitioningDelegate = transitionController
+        present(deprecatedPresentedViewController, animated: true)
+    }
     
 }
-
