@@ -10,8 +10,8 @@ VerticalSlidingPresentationController is a custom view controller presentation l
 
 ## Requirements
 
-- [x] Xcode 11.
-- [x] Swift 5.
+- [x] Xcode 11 or higher.
+- [x] Swift 5.1 or higher.
 - [x] iOS 11 or higher.
 
 ## Installation
@@ -21,7 +21,7 @@ VerticalSlidingPresentationController is a custom view controller presentation l
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. To integrate into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'VerticalSlidingPresentationController', '~> 0.1.3'
+pod 'VerticalSlidingPresentationController', '~> 0.2.0'
 ```
 
 ### Carthage
@@ -29,7 +29,7 @@ pod 'VerticalSlidingPresentationController', '~> 0.1.3'
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "liyu-wang/VerticalSlidingPresentationController" ~> 0.1.3
+github "liyu-wang/VerticalSlidingPresentationController" ~> 0.2.0
 ```
 
 ### Swift Package Manager
@@ -40,6 +40,6 @@ Once you have your Swift package set up, adding it as a dependency is as easy as
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/liyu-wang/VerticalSlidingPresentationController.git", .upToNextMajor(from: "0.1.3"))
+    .package(url: "https://github.com/liyu-wang/VerticalSlidingPresentationController.git", .upToNextMajor(from: "0.2.0"))
 ]
 ```
