@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7212360D2577726F00F48B10 /* VerticalSlidingPresentationController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72FDA3F8256141910035135E /* VerticalSlidingPresentationController.framework */; };
 		7212360E2577726F00F48B10 /* VerticalSlidingPresentationController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 72FDA3F8256141910035135E /* VerticalSlidingPresentationController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		726A1A492727F13F00A1FA9C /* VerticalSlidingPresentedViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A1A482727F13F00A1FA9C /* VerticalSlidingPresentedViewControllerProtocol.swift */; };
 		72C9E0042563FC6800590F81 /* VerticalSlidingPresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C9E0032563FC6800590F81 /* VerticalSlidingPresentedViewController.swift */; };
 		72FDA402256141910035135E /* VerticalSlidingPresentationController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72FDA3F8256141910035135E /* VerticalSlidingPresentationController.framework */; };
 		72FDA407256141910035135E /* VerticalSlidingPresentationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FDA406256141910035135E /* VerticalSlidingPresentationControllerTests.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		726A1A482727F13F00A1FA9C /* VerticalSlidingPresentedViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalSlidingPresentedViewControllerProtocol.swift; sourceTree = "<group>"; };
 		72C9E0032563FC6800590F81 /* VerticalSlidingPresentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalSlidingPresentedViewController.swift; sourceTree = "<group>"; };
 		72FDA3F8256141910035135E /* VerticalSlidingPresentationController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VerticalSlidingPresentationController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72FDA3FB256141910035135E /* VerticalSlidingPresentationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerticalSlidingPresentationController.h; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				72FDA41B25614E7C0035135E /* VerticalSlidingPresentationController.swift */,
 				72FDA41A25614E7C0035135E /* VerticalSlidingTransitionAnimators.swift */,
 				72C9E0032563FC6800590F81 /* VerticalSlidingPresentedViewController.swift */,
+				726A1A482727F13F00A1FA9C /* VerticalSlidingPresentedViewControllerProtocol.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				726A1A492727F13F00A1FA9C /* VerticalSlidingPresentedViewControllerProtocol.swift in Sources */,
 				72FDA42025614E7C0035135E /* VerticalSlidingInteractiveTransitionController.swift in Sources */,
 				72FDA41E25614E7C0035135E /* VerticalSlidingTransitionAnimators.swift in Sources */,
 				72C9E0042563FC6800590F81 /* VerticalSlidingPresentedViewController.swift in Sources */,
